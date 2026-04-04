@@ -8,7 +8,6 @@ Test Teardown   Close Application
 
 *** Test Cases ***
 TC01 Login User
-
     Home Page
     Login the user  neverusedind@gmail.com      Pankaj@123
 
