@@ -3,3 +3,7 @@ reports/
 venv/
 .gitignore
 log/
+Task1/config
+Task1/config/__pycache__
+
+Task1/reports
