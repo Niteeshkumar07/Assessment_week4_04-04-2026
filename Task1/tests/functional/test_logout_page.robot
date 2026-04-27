@@ -2,23 +2,18 @@
 Resource    ../../resources/pages/home_page.robot
 Resource    ../../resources/common_resource.robot
 Resource    ../../resources/pages/login_page.robot
+Resource    ../../resources/pages/logout_page.robot
 
 #Suite Setup   Load Environment
 Test Setup  Open Application        https://gullylabs.com/
 Test Teardown   Close Application
 
 *** Test Cases ***
-TC001 Login User
+TC002 Logout functionality
+
     [Tags]  Functional
     Home Page
-    Login the user  neverusedind@gmail.com     Pankaj@123
-    Sleep    3s
-
-TC007 Login With invalid credentials
-    [Tags]  Functional
-    Home Page
-    Login the user    phonk    hallabol
-
-    Page Should Contain    Incorrect email or password.
+    Login the user    neverusedind@gmail.com     Pankaj@123
+    Logout the user
 
     Sleep   3s

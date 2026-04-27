@@ -2,3 +2,4 @@
 reports/
 venv/
 .gitignore
+log/
